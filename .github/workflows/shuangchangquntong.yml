@@ -1,0 +1,21 @@
+name: shuangchangquntong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: shuangchangquntong
+        env:
+          kgxx21208: ${{ secrets.kgxx21208 }}
+        run: |
+          echo $kgxx21208 | jq -r .tk5926 | /bin/bash
+          echo $tbqdf1 | jq -r .sqc74 | /bin/bash
+          echo $mjai176 | jq -r .liy3110 | /bin/bash
+
